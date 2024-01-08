@@ -14,6 +14,8 @@ public record CreateDoctorData(
         @Email
         String email,
         @NotBlank
+        String phone,
+        @NotBlank
         @Length(min = 6)
         String identification,
         @NotNull
